@@ -15,7 +15,7 @@ Harmony é uma aplicação de e-commerce desenvolvida como um projeto acadêmico
 
 - **Backend**: Java Spring Boot  
 - **Frontend**: Thymeleaf, HTML, CSS, JavaScript  
-- **Banco de Dados**: (Especifique o banco utilizado)  
+- **Banco de Dados**: MySQL
 - **Arquitetura**: Padrão MVC com Spring Security  
 
 ---
