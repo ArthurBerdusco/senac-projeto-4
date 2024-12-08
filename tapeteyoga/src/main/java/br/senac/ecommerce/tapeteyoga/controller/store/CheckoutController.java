@@ -79,6 +79,8 @@ public class CheckoutController {
 public String concluirPedido(HttpSession session, @RequestParam("idEnderecoPrincipal") String idEndereco,
         @RequestParam("valorFrete") String frete, @RequestParam("formaPagamento") String formaPagamento) {
 
+            System.out.println("\n\n\n" + session.getAttribute("clientId") + "\n\n\n");
+
     // Retrieve the delivery address
     DeliveryAddress endereco = deliveryAddressRepository.findById(Long.valueOf(idEndereco))
             .orElseThrow(() -> new IllegalArgumentException("Endereço não encontrado"));

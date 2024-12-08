@@ -23,7 +23,7 @@ public class OrdersController {
             return "redirect:/login";
         }
         
-        session.setAttribute("pedidos", pedidoRepository.findAllByOrderByIdDesc());
+        session.setAttribute("pedidos", pedidoRepository.findByClienteIdOrderByIdDesc((long)session.getAttribute("clientId")));
 
         return "store/orders";
     }
